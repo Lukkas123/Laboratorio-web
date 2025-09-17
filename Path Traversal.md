@@ -7,7 +7,7 @@ Mediante la manipulación de rutas, es posible ascender de directorio y acceder 
 - Credenciales de sistemas de back-end  
 - Archivos críticos del sistema operativo  
 
-En escenarios más graves, el atacante puede leer o incluso modificar archivos arbitrarios, alterando datos o el comportamiento del servidor y, en última instancia, **tomar el control completo del sistema**.
+En escenarios más graves, el atacante puede leer o incluso modificar archivos arbitrarios, alterando datos o el comportamiento del servidor y, en última instancia, **tomar el control completo del servidor**.
 
 ---
 

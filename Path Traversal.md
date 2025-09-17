@@ -61,4 +61,3 @@ if (file.getCanonicalPath().startsWith(BASE_DIRECTORY)) {
     // process file
 }
 Este enfoque garantiza que el usuario solo pueda acceder a archivos dentro de los directorios permitidos, evitando el ascenso en el sistema de archivos.
-

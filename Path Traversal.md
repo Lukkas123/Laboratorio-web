@@ -17,7 +17,7 @@ Supongamos que tenemos una aplicación que muestra imágenes de artículos en ve
 
 ```html
 <img src="LoadImage?filename=218.png">
-´´´
+```
 La URL LoadImage toma un parámetro filename y devuelve el contenido del archivo especificado.
 La imagen se almacena en el sistema de archivos en /var/www/images/. Para devolver la imagen, la aplicación concatena el nombre de archivo (por ejemplo /var/www/images/218.png) y utiliza una API del sistema de archivos para leer su contenido.
 
@@ -46,11 +46,11 @@ Cómo prevenir el ataque
 Valida siempre la ruta canónica del archivo en función de la entrada del usuario.
 Ejemplo en Java:
 
-´´´java
+```java
 Copiar código
 File file = new File(BASE_DIRECTORY, userInput);
 if (file.getCanonicalPath().startsWith(BASE_DIRECTORY)) {
 }
-´´´
+```
 Este enfoque garantiza que el usuario solo pueda acceder a archivos dentro de los directorios permitidos, evitando el ascenso en el sistema de archivos.
 

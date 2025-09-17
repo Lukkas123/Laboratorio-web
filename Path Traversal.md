@@ -26,7 +26,7 @@ Si no existe ninguna validación, un atacante podría solicitar el archivo /etc/
 La secuencia ../ es válida y permite ascender de directorio hasta la raíz (/), desde donde es posible acceder a etc/passwd.
 En sistemas Windows, el mismo ataque puede realizarse usando ..\ en lugar de ../.
 
-Evasión de defensas
+## Evasión de defensas
 Algunas aplicaciones implementan filtros para impedir el Path Traversal, pero es posible eludirlos de varias maneras:
 
 Ruta absoluta: Referenciar directamente un archivo, por ejemplo:
@@ -43,7 +43,7 @@ Extensión obligatoria: Si se requiere una extensión, se puede usar un byte nul
 filename=../../../etc/passwd%00.png
 
 ## Cómo prevenir el ataque
-Valida siempre la ruta canónica del archivo en función de la entrada del usuario.
+Validar siempre la ruta canónica del archivo en función de la entrada del usuario.
 Ejemplo en Java:
 
 ```java

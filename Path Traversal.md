@@ -55,11 +55,12 @@ Cómo prevenir el ataque
 Valida siempre la ruta canónica del archivo en función de la entrada del usuario.
 Ejemplo en Java:
 
-java
+```java
 Copiar código
-```File file = new File(BASE_DIRECTORY, userInput);
+File file = new File(BASE_DIRECTORY, userInput);
 if (file.getCanonicalPath().startsWith(BASE_DIRECTORY)) {
-    // process file```
+    // process file
+```
 }
 Este enfoque garantiza que el usuario solo pueda acceder a archivos dentro de los directorios permitidos, evitando el ascenso en el sistema de archivos.
 

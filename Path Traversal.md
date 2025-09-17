@@ -42,7 +42,7 @@ filename=/var/www/images/../../../etc/passwd
 Extensión obligatoria: Si se requiere una extensión, se puede usar un byte nulo para terminar la ruta antes de la extensión:
 filename=../../../etc/passwd%00.png
 
-Cómo prevenir el ataque
+## Cómo prevenir el ataque
 Valida siempre la ruta canónica del archivo en función de la entrada del usuario.
 Ejemplo en Java:
 

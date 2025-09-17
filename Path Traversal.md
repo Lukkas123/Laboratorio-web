@@ -23,8 +23,6 @@ La imagen se almacena en el sistema de archivos en /var/www/images/. Para devolv
 
 Si no existe ninguna validación, un atacante podría solicitar el archivo /etc/passwd del sistema con una petición como:
 
-text
-
 /var/www/images/../../../etc/passwd
 La secuencia ../ es válida y permite ascender de directorio hasta la raíz (/), desde donde es posible acceder a etc/passwd.
 En sistemas Windows, el mismo ataque puede realizarse usando ..\ en lugar de ../.
@@ -34,8 +32,6 @@ Algunas aplicaciones implementan filtros para impedir el Path Traversal, pero es
 
 Ruta absoluta: Referenciar directamente un archivo, por ejemplo:
 
-text
-
 filename=/etc/passwd
 Secuencias de recorrido anidadas: ....// o ....\/, que se reducen a ../ al normalizarse.
 
@@ -43,12 +39,9 @@ Codificación URL: Codificar los caracteres ../, por ejemplo %2e%2e%2f o doble c
 
 Prefijo obligatorio: Si se requiere que el archivo comience con la carpeta base, se puede incluir seguida de secuencias de recorrido:
 
-text
-
 filename=/var/www/images/../../../etc/passwd
 Extensión obligatoria: Si se requiere una extensión, se puede usar un byte nulo para terminar la ruta antes de la extensión:
 
-text
 Copiar código
 filename=../../../etc/passwd%00.png
 Cómo prevenir el ataque

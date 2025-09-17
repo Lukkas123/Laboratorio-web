@@ -16,7 +16,8 @@ En escenarios más graves, el atacante puede leer o incluso modificar archivos a
 Supongamos que tenemos una aplicación que muestra imágenes de artículos en venta y carga cada imagen con el siguiente HTML:
 
 ```html
-<img src="LoadImage?filename=218.png">```
+<img src="LoadImage?filename=218.png">
+```
 La URL LoadImage toma un parámetro filename y devuelve el contenido del archivo especificado.
 La imagen se almacena en el sistema de archivos en /var/www/images/. Para devolver la imagen, la aplicación concatena el nombre de archivo (por ejemplo /var/www/images/218.png) y utiliza una API del sistema de archivos para leer su contenido.
 

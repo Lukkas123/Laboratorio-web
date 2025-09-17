@@ -16,7 +16,7 @@ En escenarios más graves, el atacante puede leer o incluso modificar archivos a
 Supongamos que tenemos una aplicación que muestra imágenes de artículos en venta y carga cada imagen con el siguiente HTML:
 
 html
-'<img src="LoadImage?filename=218.png">'
+´<img src="LoadImage?filename=218.png">´   
 La URL LoadImage toma un parámetro filename y devuelve el contenido del archivo especificado.
 La imagen se almacena en el sistema de archivos en /var/www/images/. Para devolver la imagen, la aplicación concatena el nombre de archivo (por ejemplo /var/www/images/218.png) y utiliza una API del sistema de archivos para leer su contenido.
 
@@ -47,8 +47,8 @@ Valida siempre la ruta canónica del archivo en función de la entrada del usuar
 Ejemplo en Java:
 
 java
-'File file = new File(BASE_DIRECTORY, userInput);
+´File file = new File(BASE_DIRECTORY, userInput);
 if (file.getCanonicalPath().startsWith(BASE_DIRECTORY)) {
-    // process file'
+    // process file´
 }
 Este enfoque garantiza que el usuario solo pueda acceder a archivos dentro de los directorios permitidos, evitando el ascenso en el sistema de archivos.

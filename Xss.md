@@ -4,7 +4,7 @@ El **Cross-Site Scripting (XSS)** es una vulnerabilidad de seguridad web que per
 
 ---
 
-## 🚀 ¿Qué puede hacer un atacante con XSS?
+## ¿Qué puede hacer un atacante con XSS?
 Al ejecutar código en el navegador de la víctima, un atacante puede:
 - **Suplantar** al usuario víctima.
 - **Realizar acciones** en nombre del usuario.
@@ -14,7 +14,7 @@ Al ejecutar código en el navegador de la víctima, un atacante puede:
 
 ---
 
-## 📂 Tipos de Ataques XSS
+## Tipos de Ataques XSS
 
 | Tipo | Origen del Script | Funcionamiento |
 | :--- | :--- | :--- |
@@ -24,7 +24,7 @@ Al ejecutar código en el navegador de la víctima, un atacante puede:
 
 ---
 
-## 🧪 Prueba de Concepto (PoC)
+## Prueba de Concepto (PoC)
 Tradicionalmente se usa `alert()` para confirmar la vulnerabilidad, pero en navegadores modernos como Chrome (v92+) se recomienda usar `print()` en ciertos contextos de iframes:
 
 ```javascript
@@ -34,7 +34,7 @@ Tradicionalmente se usa `alert()` para confirmar la vulnerabilidad, pero en nave
 // Carga útil recomendada para Chrome moderno
 <script>print() </script>
 ```
-## 💥 Impacto de las Vulnerabilidades
+## Impacto de las Vulnerabilidades
 El impacto real de un ataque XSS depende de la naturaleza de la aplicación y del nivel de acceso del usuario afectado:
 
 - **Datos Sensibles:** En aplicaciones que manejan transacciones bancarias, correos electrónicos o registros médicos, el impacto suele ser **crítico**.
@@ -43,7 +43,7 @@ El impacto real de un ataque XSS depende de la naturaleza de la aplicación y de
 
 ---
 
-## 🔍 Cómo encontrar y probar XSS
+## Cómo encontrar y probar XSS
 La gran mayoría de las vulnerabilidades se pueden encontrar de forma fiable con herramientas o de forma manual:
 
 1. **Escaneo Automático:** El escáner de vulnerabilidades de **Burp Suite** es el estándar industrial para detectar XSS de forma rápida.
@@ -54,7 +54,7 @@ La gran mayoría de las vulnerabilidades se pueden encontrar de forma fiable con
 
 ---
 
-## 🛡️ Cómo prevenir los ataques XSS
+## Cómo prevenir los ataques XSS
 La prevención eficaz requiere una combinación de las siguientes medidas:
 
 - **Filtrar la entrada a la llegada:** Validar estrictamente la entrada del usuario basándose en lo que se espera (listas blancas).
@@ -64,7 +64,7 @@ La prevención eficaz requiere una combinación de las siguientes medidas:
 
 ---
 
-## ❓ Preguntas Comunes (FAQs)
+## Preguntas Comunes (FAQs)
 
 | Pregunta | Respuesta |
 | :--- | :--- |
@@ -75,9 +75,9 @@ La prevención eficaz requiere una combinación de las siguientes medidas:
 
 ---
 
-## 🔗 Conceptos Avanzados
+## Conceptos Avanzados
 - **Inyección de marcado colgante (Dangling markup):** Técnica para capturar datos cuando un XSS completo no es posible debido a filtros.
 - **Bypass de CSP:** A veces, las políticas mal configuradas pueden ser eludidas para permitir la explotación.
 
 ---
-_Resumen técnico generado para documentación de seguridad web._
+

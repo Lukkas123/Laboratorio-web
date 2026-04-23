@@ -64,17 +64,6 @@ La prevención eficaz requiere una combinación de las siguientes medidas:
 
 ---
 
-## Preguntas Comunes (FAQs)
-
-| Pregunta | Respuesta |
-| :--- | :--- |
-| **¿XSS vs CSRF?** | XSS inyecta scripts maliciosos; CSRF induce a la víctima a realizar acciones involuntarias. |
-| **¿XSS vs Inyección SQL?** | XSS es del lado del cliente (ataca usuarios); SQLi es del lado del servidor (ataca la base de datos). |
-| **¿Cómo prevenir en PHP?** | Usar listas blancas de entrada y `htmlentities()` con `ENT_QUOTES` para la salida HTML. |
-| **¿Cómo prevenir en Java?** | Utilizar librerías como **Google Guava** para codificar la salida y validar tipos de datos. |
-
----
-
 ## Conceptos Avanzados
 - **Inyección de marcado colgante (Dangling markup):** Técnica para capturar datos cuando un XSS completo no es posible debido a filtros.
 - **Bypass de CSP:** A veces, las políticas mal configuradas pueden ser eludidas para permitir la explotación.
